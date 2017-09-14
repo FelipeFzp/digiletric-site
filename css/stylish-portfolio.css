@@ -237,12 +237,6 @@ hr.small {
   padding: 50px 0;
 }
 
-@media(max-width:768px) {
-  .contact {
-    height: 75%;
-  }
-}
-
 .contact iframe {
   pointer-events: none;
 }
@@ -250,7 +244,6 @@ hr.small {
 .map {
   margin-top: 15px;
 }
-
 
 /* Footer */
 
