@@ -55,7 +55,7 @@
    <!-- Header -->
    <header class="header" id="home">
       <div class="text-vertical-center">
-         <img class="img-fluid" src="img/logo.png" width="600px" height="600px">
+         <img class="img-fluid" src="img/logo.png">
       </div>
    </header>
 
@@ -154,34 +154,67 @@
                   <h2>Nosso Trabalho</h2>
                   <hr class="small">
                   <div class="row">
+
                      <div class="col-md-6">
-                        <div class="portfolio-item">
-                           <a href="#">
-                              <img class="img-portfolio img-fluid" src="img/portfolio-1.jpg">
-                           </a>
+                        <div class="portfolio-item" data-toggle="modal" data-target="#modal1">
+                           <img class="img-portfolio img-fluid" src="img/portfolio-1.jpg">
                         </div>
                      </div>
-                     <div class="col-md-6">
-                        <div class="portfolio-item">
-                           <a href="#">
-                              <img class="img-portfolio img-fluid" src="img/portfolio-2.jpg">
-                           </a>
+                     <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                           <div class="modal-content">
+                              <div class="modal-body">
+                                 <img class="img-fluid" data-dismiss="modal" width="90%" src="img/portfolio-1.jpg">
+                              </div>
+                           </div>
                         </div>
                      </div>
+
                      <div class="col-md-6">
-                        <div class="portfolio-item">
-                           <a href="#">
-                              <img class="img-portfolio img-fluid" src="img/portfolio-3.jpg">
-                           </a>
+                        <div class="portfolio-item" data-toggle="modal" data-target="#modal2">
+                           <img class="img-portfolio img-fluid" src="img/portfolio-2.jpg">
                         </div>
                      </div>
-                     <div class="col-md-6">
-                        <div class="portfolio-item">
-                           <a href="#">
-                              <img class="img-portfolio img-fluid" src="img/portfolio-4.jpg">
-                           </a>
+                     <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                           <div class="modal-content">
+                              <div class="modal-body">
+                                 <img class="img-fluid" data-dismiss="modal" width="90%" src="img/portfolio-2.jpg">
+                              </div>
+                           </div>
                         </div>
                      </div>
+
+                     <div class="col-md-6">
+                        <div class="portfolio-item" data-toggle="modal" data-target="#modal3">
+                           <img class="img-portfolio img-fluid" src="img/portfolio-3.jpg">
+                        </div>
+                     </div>
+                     <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                           <div class="modal-content">
+                              <div class="modal-body">
+                                 <img class="img-fluid" data-dismiss="modal" width="90%" src="img/portfolio-3.jpg">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-md-6">
+                        <div class="portfolio-item" data-toggle="modal" data-target="#modal4">
+                           <img class="img-portfolio img-fluid" src="img/portfolio-4.jpg">
+                        </div>
+                     </div>
+                     <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                           <div class="modal-content">
+                              <div class="modal-body">
+                                 <img class="img-fluid" data-dismiss="modal" width="90%" src="img/portfolio-4.jpg">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
                   </div>
                   <!-- /.row (nested) -->
                </div>
@@ -213,18 +246,18 @@
                   <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d3483.825034211323!2d-51.22059446457876!3d-29.169827771539648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d-29.169884!2d-51.2186847!4m5!1s0x951ea2fed0ae0f43%3A0x5ebe572c90c89e43!2sgoogle+maps+digiletric+cinquentenario!3m2!1d-29.1699022!2d-51.218339!5e0!3m2!1spt-BR!2sbr!4v1505352262154"></iframe>
                </div>
                <div class="col-md-6">
-                  <form>
+                  <form action="php/send-email.php" method="post">
                      <div class="form-group col-md-12">
                         <label for="contact_name" class="col-form-label">Nome</label>
-                        <input type="text" name="contact_name" class="form-control" id="contact_name" placeholder="Nome">
+                        <input type="text" name="name" required class="form-control" id="contact_name" placeholder="Nome">
                      </div>
                      <div class="form-group col-md-12">
                         <label for="contact_email" class="col-form-label">E-mail</label>
-                        <input type="email" name="contact_email" class="form-control" id="contact_email" placeholder="E-mail">
+                        <input type="email" name="email" required class="form-control" id="contact_email" placeholder="E-mail">
                      </div>
                      <div class="form-group col-md-12">
                         <label for="contact_message" class="col-form-label">Mensagem</label>
-                        <textarea class="form-control" name="contact_message" id="contact_textarea" rows="4"></textarea>
+                        <textarea class="form-control" name="message" required id="contact_textarea" placeholder="Digite sua mensagem" rows="4"></textarea>
                      </div>
                      <div class="form-group col-md-12">
                         <button type="submit" class="btn btn-primary pull-right">Enviar</button>
