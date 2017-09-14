@@ -231,27 +231,32 @@ hr.small {
 }
 
 
-/* Map */
+/* contact */
 
-.map {
-  height: 500px;
+.contact {
+  padding: 50px 0;
 }
 
 @media(max-width:768px) {
-  .map {
+  .contact {
     height: 75%;
   }
 }
 
-.map iframe {
+.contact iframe {
   pointer-events: none;
+}
+
+.map {
+  margin-top: 15px;
 }
 
 
 /* Footer */
 
 footer {
-  padding: 100px 0;
+  padding: 50px 0;
+  background-color: #f7f7f7;
 }
 
 #to-top {
