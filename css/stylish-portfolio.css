@@ -234,6 +234,7 @@ hr.small {
 
 .portfolio-item {
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .img-portfolio {
@@ -297,6 +298,7 @@ footer {
   border-radius: 50%;
   width: 150px;
   height: 150px;
+  cursor: pointer;
 }
 
 .imgs-modal {
