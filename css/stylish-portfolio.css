@@ -53,20 +53,45 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
+.btn-to-top-rounded{
+  border-radius: 50%;
+  background-color: rgb(18, 95, 178) !important;
+  height: 60px;
+  width: 60px;
+}
+
 .btn-light:hover, .btn-light:focus, .btn-light:active {
   color: #333;
   background-color: rgba(255, 255, 255, .8);
 }
 
-
+.phones-informations{
+  p{
+    margin: 0;
+    padding: 0;
+  }
+}
 /* Custom Horizontal Rule */
 
 hr.small {
   max-width: 100px;
 }
-
-
+.main-background-image{
+  position: relative;
+}
+.background-filter{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(220,220,220);
+  opacity: 0.4;
+  position: absolute;
+}
 /* Side Menu */
+
+.nav-bar-alignment{
+    position: absolute;
+    right: 8%;
+}
 
 #sidebar-wrapper {
   position: fixed;
