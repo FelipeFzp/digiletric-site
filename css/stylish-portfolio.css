@@ -262,5 +262,7 @@ footer {
 }
 
 .close {
-  margin-left: 97%;
+  position: absolute;
+  right: 2%;
 }
+
