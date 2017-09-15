@@ -291,3 +291,15 @@ footer {
   right: 2%;
 }
 
+.service-img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.imgs-modal {
+  margin-bottom: 10px;
+}
+
