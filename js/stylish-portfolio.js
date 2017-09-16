@@ -8,7 +8,7 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: target.offset().top-67
+          scrollTop: target.offset().top-65
         }, 900, "easeInOutExpo");
         return false;
       }
