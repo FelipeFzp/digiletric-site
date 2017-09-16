@@ -29,6 +29,9 @@ body {
 }
 
 /* Custom Button Styles */
+button.close{
+  outline: none;
+}
 
 .btn-dark {
   color: #fff;
