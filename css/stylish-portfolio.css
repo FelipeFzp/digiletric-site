@@ -91,14 +91,16 @@ hr.small {
 }
 /* Side Menu */
 
-.nav-bar-alignment{
-  position: absolute;
-  right: 8%;
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    position: absolute !important;
+    right: 6%;
+  }
 }
 
 ::selection {
-    text-shadow: none;
-    background: rgba(255,64,129,.8);
+  text-shadow: none;
+  background: rgba(255,64,129,.8);
 }
 
 #sidebar-wrapper {
