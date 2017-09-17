@@ -44,6 +44,10 @@ button.close{
   margin-top: 20px;
 }
 
+.fa {
+  margin-top: 5px;
+}
+
 .btn-dark:hover, .btn-dark:focus, .btn-dark:active {
   color: #fff;
   background-color: rgba(0, 0, 0, .7);
@@ -305,7 +309,7 @@ footer {
   right: 2%;
 }
 
-.service-img {
+.product-img {
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 50%;
